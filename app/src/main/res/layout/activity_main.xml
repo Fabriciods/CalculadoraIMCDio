@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_imc"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_PesoGuide"
+        style="@style/text_guides"
+        android:text="@string/peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <EditText
+        android:id="@+id/et_Peso"
+        style="@style/editText"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/peso_hit"
+        app:layout_constraintEnd_toEndOf="@id/tv_PesoGuide"
+        app:layout_constraintStart_toStartOf="@id/tv_PesoGuide"
+        app:layout_constraintTop_toBottomOf="@id/tv_PesoGuide" />
+
+    <TextView
+        android:id="@+id/tv_AlturaGuide"
+        style="@style/text_guides"
+        android:layout_marginTop="28dp"
+        android:text="@string/altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_Peso" />
+
+    <EditText
+        android:id="@+id/et_altura"
+        style="@style/editText"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/altura_hint"
+        app:layout_constraintEnd_toEndOf="@id/tv_AlturaGuide"
+        app:layout_constraintStart_toStartOf="@id/tv_AlturaGuide"
+        app:layout_constraintTop_toBottomOf="@id/tv_AlturaGuide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <Button
+        android:id="@+id/bt_Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#bb4678"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_altura" />
+
+    <TextView
+        android:id="@+id/et_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:text="@string/resultado"
+        app:layout_constraintTop_toBottomOf="@id/bt_Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

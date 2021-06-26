@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalculadoraIMC</string>
+    <string name="calculadora_imc">Calculadora IMC</string>
+    <string name="peso">Insira o seu Peso em Kg: </string>
+    <string name="peso_hit">Ex. 74,3 Kg</string>
+    <string name="altura">Insira a sua altura em metros:</string>
+    <string name="altura_hint">Ex: 1,70 m</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Seu IMC é %1$.2f</string>
+</resources>
